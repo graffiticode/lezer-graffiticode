@@ -2,9 +2,13 @@
    expressed by lezer's built-in tokenizer. */
 
 import {ExternalTokenizer, ContextTracker} from "@lezer/lr"
-import {insertSemi, noSemi, noSemiType, incdec, incdecPrefix, questionDot,
-        spaces, newline, BlockComment, LineComment,
-        JSXStartTag, Dialect_jsx} from "./parser.terms.js"
+import {
+  insertSemi, noSemi, noSemiType, incdec, incdecPrefix, questionDot,
+  spaces, newline,
+//  BlockComment,
+  LineComment,
+  JSXStartTag, Dialect_jsx
+} from "./parser.terms.js"
 
 const space = [9, 10, 11, 12, 13, 32, 133, 160, 5760, 8192, 8193, 8194, 8195, 8196, 8197, 8198, 8199, 8200,
                8201, 8202, 8232, 8233, 8239, 8287, 12288]
