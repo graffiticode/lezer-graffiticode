@@ -5,7 +5,6 @@ import {ExternalTokenizer, ContextTracker} from "@lezer/lr"
 import {
   insertSemi, noSemi, noSemiType, incdec, incdecPrefix, questionDot,
   spaces, newline,
-//  BlockComment,
   LineComment,
   JSXStartTag, Dialect_jsx
 } from "./parser.terms.js"
@@ -19,7 +18,7 @@ const braceR = 125, semicolon = 59, slash = 47, star = 42, plus = 43, minus = 45
 export const trackNewline = new ContextTracker({
   start: false,
   shift(context, term) {
-    return term == LineComment || term == BlockComment || term == spaces ? context : term == newline
+    return term == LineComment || term == spaces ? context : term == newline
   },
   strict: false
 })
