@@ -1,6 +1,6 @@
 {
   "name": "@graffiticode/lezer-graffiticode",
-  "version": "0.0.3",
+  "version": "0.0.6",
   "description": "lezer-based Graffiticode grammar",
   "main": "dist/index.cjs",
   "type": "module",
